@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Demo Expose Spring Boot</title>
+</head>
+<body>
+<h1>Cours de : <span th:text="${courseName}"></span></h1>
+	<table>
+		<thead>
+		<th>Pr&eacute;nom</th>
+		<th>Nom</th>
+		</thead>
+		<tbody>
+			<tr th:each="person : ${persons}">
+				<td th:text="${person.name}" />
+				<td th:text="${person.lastName}" />
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
